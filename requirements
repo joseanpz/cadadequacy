@@ -1,0 +1,15 @@
+algopy==0.5.7
+cycler==0.10.0
+kiwisolver==1.0.1
+matplotlib==3.0.3
+numdifftools==0.9.20
+numpy==1.16.2
+pandas==0.24.2
+patsy==0.5.1
+pyflux==0.4.15
+pyparsing==2.3.1
+python-dateutil==2.8.0
+pytz==2018.9
+scipy==1.2.1
+six==1.12.0
+statsmodels==0.9.0

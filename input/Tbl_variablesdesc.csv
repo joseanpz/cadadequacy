@@ -1,0 +1,214 @@
+1|0|2|0|DJA|Dow Jones Industrial Average|2005-01-01|Indice porcentual||\N|\N|\N
+2|0|2|0|NASDAQ||2005-01-01|||\N|\N|\N
+3|0|2|0|T_BILL_3M||2005-01-01|||\N|\N|\N
+4|0|2|0|T_BILL_6M||2005-01-01|||\N|\N|\N
+5|0|2|0|E_DOLAR_EURO||2005-01-01|||\N|\N|\N
+6|0|2|0|DFF||2005-01-01|||\N|\N|\N
+7|0|2|0|DJCA||2006-08-16|||\N|\N|\N
+8|0|2|0|S&P 500||2005-01-01|||\N|\N|\N
+9|0|2|0|TASA_DE_DESEMPLEO||2005-01-01|||0||\N
+10|0|1|2|INFLACION||2005-01-01|||\N|\N|\N
+13|0|2|0|GDP||2005-01-01|||\N|\N|\N
+14|0|2|0|INPC_USA||2000-01-01|||\N|\N|\N
+15|0|2|0|E_USA_EURO||2000-01-01|||\N|\N|\N
+17|0|2|0|PRIME_RATE||2005-01-01|||\N|\N|\N
+20|0|1|0|CD_SF||2005-01-01|||\N|\N|\N
+21|0|1|0|CD_AL_SP||2005-01-01|||\N|\N|\N
+22|0|1|0|CD_AL_SP_BANKS||2005-01-01|||\N|\N|\N
+23|SP68257|1|1|UDIS|Valor de UDIS|2005-01-01|||1|\N|\N
+24|SF43716|1|1|IPC|Indice de precios y cotizaciones Indice general|2005-01-01|||1|\N|\N
+25|SF43783|1|1|TIIE_28|TIIE a 28 días Tasa de interés en por ciento anual|2005-01-01|||1|\N|\N
+26|SF43878|1|1|TIIE_91|Tasas de interés interbancarias Por ciento anual TIIE a 91 días|2005-01-01|||1|\N|\N
+27|SF111916|1|1|TIIE_182|TIIE a 182 días|2005-01-01|||1|\N|\N
+28|SF63528|1|1|DOLAR - TIPO DE CAMBIO |Tipo de cambio Pesos por dólar E.U.A. Tipo de cambio para solventar obligaciones denominadas en moneda extranjera Fecha de determinación (FIX)|2005-01-01|||1|\N|\N
+29|SF45438|1|1|CETES_28|Valores gubernamentales Resultados de la subasta semanal Plazo en días Cetes a 28 días|2005-01-01|||1|\N|\N
+30|SF45440|1|1|CETE_91|Valores gubernamentales Resultados de la subasta semanal Tasa de rendimiento Cetes a 91 días|2005-01-01|||1|\N|\N
+31|SF45442|1|1|CETE_182|Valores gubernamentales Resultados de la subasta semanal Tasa de rendimiento Cetes a 182 días|2005-01-01|||1|\N|\N
+32|SF45444|1|1|CETE_364|Valores gubernamentales Resultados de la subasta semanal Tasa de rendimiento Cetes a 364 días|2005-01-01|||1|\N|\N
+33|SF43779|1|1|TASA_FONDEO|Tasa de fondeo bancario Al cierre Tasa de interés en por ciento anual|2005-01-01|||1|\N|\N
+34|SI744|1|1|PRECIO_PETROLEO|Producto interno bruto Producto interno bruto, a precios de mercado Actividades secundarias Industrias manufactureras Fabricación de productos derivados del petróleo y del carbón|2005-01-01|||1|\N|\N
+35|SF60653|1|1|FIX_LIQ|Tipo de cambio Pesos por dólar E.U.A. Tipo de cambio para solventar obligaciones denominadas en moneda extranjera Fecha de determinación (FIX)|2005-01-01|||1|\N|\N
+37|0|1|2|INPC|Índice nacional de precios al consumidor. Base segunda quincena de julio de 2018=100|2005-01-01|||2|\N|\N
+38|0|1|2|X_TOTAL|Total Exportacion|2005-01-01|||2|\N|\N
+39|0|1|2|X_PETROLERAS|Exportacion petrolera|2005-01-01|||2|\N|\N
+40|0|1|2|X_NOPETROLERAS|Exportacion no petrolera|2005-01-01|||2|\N|\N
+41|0|1|2|M_TOTAL|Total Importacion|2005-01-01|||2|\N|\N
+42|0|1|2|M_PETROLERAS|Importacion petrolera|2005-01-01|||2|\N|\N
+43|0|1|2|M_NOPETROLERAS|Importacion no petrolera|2005-01-01|||2|\N|\N
+44|0|1|2|T_DESEMPLEO|Tasas de ocupación, desocupación y subocupación (resultados mensuales de la ENOE, 15 años y más)|2005-01-01|||2|\N|\N
+52|SI561|1|2|LIBOR_3M|Libor a 3 meses %, anualizada (Asociación Británica de Banqueros)|2005-01-01|||1|Esta serie se dio de baja a partir del 1 de agosto de 2017. Sin perjuicio de lo anterior, y para tener un mayor detalle de la tasa Libor|\N
+53|SI562|1|2|LIBOR_6M|Libor a 6 meses %, anualizada (Asociación Británica de Banqueros)|2005-01-01|||1|Esta serie se dio de baja a partir del 1 de agosto de 2017. Sin perjuicio de lo anterior, y para tener un mayor detalle de la tasa Libor|\N
+54||1|2|PIB_MES|Déficit por intermediación financiera Medición implícita por fuentes de financiamiento Intermediacion financiera devengada como proporción del PIB (Base 2003)|2005-01-01|||0|\N|\N
+55|0|1|0|CAMBIO_PIB_MES||2005-01-01|||\N|\N|\N
+56|SF17908|1|2|TIPO_CAMBIO|Encuestas Sobre las Expectativas de los Especialistas Economía del Sector Privado Expectativas Mensuales del Tipo de Cambio Pesos por dólar estadounidense promedio del mes Mes en curso (mes t) Media|2005-01-01|||1|\N|\N
+57|0|1|2|TASA_PRIME||2005-01-01|||2|\N|\N
+60|0|0|0|DIVISAS, TODAS LAS DIVISAS QUE MANEJA BANXICO||2005-01-01|||\N|\N|\N
+61|0|1|3|PIB_real||2005-01-01|||2|\N|\N
+62|0|1|3|PIB_variacion||2005-01-01|||2|\N|\N
+36|0|1|0|FIX_DET|\N|2005-01-01|\N|\N|\N|\N|\N
+63|SF283|1|2|TIIE 28|TIIE a 28 días Tasa de interés promedio mensual, en por ciento anual|\N|\N|\N|1|\N|\N
+64|SF17801|1|2|TIIE 91|TIIE a 91 días Tasa de interés promedio mensual, en por ciento anual|\N|\N|\N|1|\N|\N
+65|SF221962|1|2|TIIE 182|TIIE a 182 días Tasa de interés promedio mensual, en por ciento anual|\N|\N|\N|1|\N|\N
+66|SF282|1|2|CETES 28|Cetes 28 días Tasa de rendimiento promedio mensual, en por ciento anual|\N|\N|\N|1|\N|\N
+67|SF3338|1|2|CETES 91|Cetes 91 días Tasa de rendimiento promedio mensual, en por ciento anual|\N|\N|\N|1|\N|\N
+68|SF3270|1|2|CETES 182|Cetes 182 días tasa de rendimiento Tasa de rendimiento promedio mensual, en por ciento anual|\N|\N|\N|1|\N|\N
+69|SF3367|1|2|CETES 364|Cetes 364 días Tasa de rendimiento promedio mensual, en por ciento anual|\N|\N|\N|1|\N|\N
+70|SF229266|1|2|CNH China (Yuan Extracontinental), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México, CNH China (Yuan Extracontinental), Dólares por divisa	|2013-07-01|\N|\N|1|\N|\N
+71|SF229267|1|2|CNH China (Yuan Extracontinental), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, CNH China (Yuan Extracontinental), Tipo en pesos	|2013-07-01|\N|\N|1|\N|\N
+72|SF57746|1|2|CNH China (Yuan Extracontinental), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, CNH China (Yuan Extracontinental), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+73|SF57747|1|2|CNH China (Yuan Extracontinental), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, CNH China (Yuan Extracontinental), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+74|SF57748|1|2|DZD Argelia (Dinar), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México, DZD Argelia (Dinar), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+75|SF57749|1|2|DZD Argelia (Dinar), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, DZD Argelia (Dinar), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+76|SF57750|1|2|ARP Argentina (Peso), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México, ARP Argentina (Peso), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+77|SF57751|1|2|ARP Argentina (Peso), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, ARP Argentina (Peso), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+78|SF57752|1|2|AUD Australia (Dólar), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México, AUD Australia (Dólar), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+79|SF57753|1|2|AUD Australia (Dólar), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, AUD Australia (Dólar), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+80|SF57754|1|2|BSD Bahamas (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, BSD Bahamas (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+81|SF57755|1|2|BSD Bahamas (Dólar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  BSD Bahamas (Dólar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+82|SF57758|1|2|BBD Barbados (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  BBD Barbados (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+83|SF57759|1|2|BBD Barbados (Dólar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  BBD Barbados (Dólar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+84|SF57760|1|2|BZD Belice (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, BZD Belice (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+85|SF57761|1|2|BZD Belice (Dólar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, BZD Belice (Dólar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+86|SF57762|1|2|BMD Bermuda (Dólar), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México, BMD Bermuda (Dólar), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+87|SF57763|1|2|BMD Bermuda (Dólar), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, BMD Bermuda (Dólar), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+88|SF57764|1|2|BOB Bolivia (Boliviano), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México, BOB Bolivia (Boliviano), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+89|SF57765|1|2|BOB Bolivia (Boliviano), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, BOB Bolivia (Boliviano), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+90|SF57766|1|2|BRL Brasil (Real), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México, BRL Brasil (Real), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+91|SF57767|1|2|BRL Brasil (Real), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, BRL Brasil (Real), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+92|SF57770|1|2|CAD Canadá (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, CAD Canadá (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+93|SF57771|1|2|CAD Canadá (Dólar), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, CAD Canadá (Dólar), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+94|SF57772|1|2|CLP Chile (Peso), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México, CLP Chile (Peso), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+95|SF57773|1|2|CLP Chile (Peso), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, CLP Chile (Peso), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+96|SF57774|1|2|CNY China Continental (Yuan Continental), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, CNY China Continental (Yuan Continental), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+97|SF57775|1|2|CNY China (Yuan Continental), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, CNY China (Yuan Continental), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+98|SF57776|1|2|COP Colombia (Peso 2/), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, COP Colombia (Peso 2/), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+99|SF57777|1|2|COP Colombia (Peso 2/), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, COP Colombia (Peso 2/), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+100|SF57780|1|2|KRW Corea Del Sur (Won 2/), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  KRW Corea Del Sur (Won 2/), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+101|SF57781|1|2|KRW Corea Del Sur (Won 2/), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, KRW Corea Del Sur (Won 2/), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+102|SF57782|1|2|CRC Costa Rica (Colon), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, CRC Costa Rica (Colon), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+103|SF57783|1|2|CRC Costa Rica (Colon), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, CRC Costa Rica (Colon), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+104|SF57784|1|2|CUP Cuba (Peso), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, CUP Cuba (Peso), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+105|SF57785|1|2|CUP Cuba (Peso), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, CUP Cuba (Peso), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+106|SF57786|1|2|XDR Der. Esp. Giro (Deg), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  XDR Der. Esp. Giro (Deg), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+107|SF57787|1|2|XDR Der. Esp. Giro (Deg), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, XDR Der. Esp. Giro (Deg), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+108|SF57788|1|2|DKK Dinamarca (Corona), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  DKK Dinamarca (Corona), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+109|SF57789|1|2|DKK Dinamarca (Corona), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, DKK Dinamarca (Corona), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+110|SF57790|1|2|ESD Ecuador (Dólar), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México,  ESD Ecuador (Dólar), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+111|SF57791|1|2|ESC Ecuador (Dólar), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, ESC Ecuador (Dólar), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+112|SF57792|1|2|EGP Egipto (Libra), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México, EGP Egipto (Libra), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+113|SF57793|1|2|EGP Egipto (Libra), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, EGP Egipto (Libra), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+114|SF57794|1|2|SVC El Salvador (Colon), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, SVC El Salvador (Colon), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+115|SF57795|1|2|SVC El Salvador (Colon), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, SVC El Salvador (Colon), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+116|SF57796|1|2|AED Em. Árabes Unidos (Dirham), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, AED Em. Árabes Unidos (Dirham), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+117|SF57797|1|2|AED Em. Árabes Unidos (Dirham), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, AED Em. Árabes Unidos (Dirham), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+118|SF57804|1|2|USD E.U.A. (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, USD E.U.A. (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+119|SF57805|1|2|USD E.U.A. (Dólar), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, USD E.U.A. (Dólar), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+120|SF57806|1|2|RUB Fed. Rusa (Rublo), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  RUB Fed. Rusa (Rublo), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+121|SF57807|1|2|RUB Fed. Rusa (Rublo), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México,  RUB Fed. Rusa (Rublo), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+122|SF57808|1|2|FJD Fidji (En Decimal) (Dólar), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México,  FJD Fidji (En Decimal) (Dólar), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+123|SF57809|1|2|FJD Fidji (En Decimal) (Dólar), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, FJD Fidji (En Decimal) (Dólar), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+124|SF57810|1|2|PHP Filipinas (Peso), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, PHP Filipinas (Peso), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+125|SF57811|1|2|PHP Filipinas (Peso), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, PHP Filipinas (Peso), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+126|SF57814|1|2|STG Gran Bretaña (Libra Esterlina), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México,  STG Gran Bretaña (Libra Esterlina), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+127|SF57815|1|2|STG Gran Bretaña (Libra Esterlina), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, STG Gran Bretaña (Libra Esterlina), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+128|SF57816|1|2|GTQ Guatemala (Quetzal), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México,  GTQ Guatemala (Quetzal), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+129|SF57817|1|2|GTQ Guatemala (Quetzal), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, GTQ Guatemala (Quetzal), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+130|SF57818|1|2|GYD Guyana (Dólar), Dólares por divisa	|Tipos de Cambio para Revalorización de Balance del Banco de México,GYD Guyana (Dólar), Dólares por divisa	|2000-01-01|\N|\N|1|\N|\N
+131|SF57819|1|2|GYD Guyana (Dólar), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, GYD Guyana (Dólar), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+132|SF57822|1|2|HNL Honduras (Lempira), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  HNL Honduras (Lempira), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+133|SF57823|1|2|HNL Honduras (Lempira), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, HNL Honduras (Lempira), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+134|SF57824|1|2|HKD Hong Kong (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  HKD Hong Kong (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+135|SF57825|1|2|HKD Hong Kong (Dólar), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, HKD Hong Kong (Dólar), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+136|SF57826|1|2|HUF Hungría (Forint), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, HUF Hungría (Forint), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+137|SF57827|1|2|HUF Hungría (Forint), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, HUF Hungría (Forint), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+138|SF57828|1|2|INR India (Rupia), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, INR India (Rupia), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+139|SF57829|1|2|INR India (Rupia), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México, INR India (Rupia), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+140|SF57830|1|2|IDR Indonesia (Rupia 2/), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  IDR Indonesia (Rupia 2/), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+141|SF57831|1|2|IDR Indonesia (Rupia 2/), Tipo en pesos	|Tipos de Cambio para Revalorización de Balance del Banco de México,  IDR Indonesia (Rupia 2/), Tipo en pesos	|2000-01-01|\N|\N|1|\N|\N
+142|SF57832|1|2|IQD Irak (Dinar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, IQD Irak (Dinar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+143|SF57833|1|2|IQD Irak (Dinar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, IQD Irak (Dinar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+144|SF57836|1|2|ILS Israel (Shekel), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  ILS Israel (Shekel), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+145|SF57837|1|2|ILS Israel (Shekel), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, ILS Israel (Shekel), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+146|SF57838|1|2|JMD Jamaica (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  JMD Jamaica (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+147|SF57839|1|2|JMD Jamaica (Dólar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  JMD Jamaica (Dólar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+148|SF57840|1|2|JPY Japón (Yen), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, JPY Japón (Yen), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+149|SF57841|1|2|JPY Japón (Yen), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, JPY Japón (Yen), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+150|SF57844|1|2|KES Kenya (Chelín), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  KES Kenya (Chelín), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+151|SF57845|1|2|KES Kenya (Chelín), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, KES Kenya (Chelín), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+152|SF57846|1|2|KWD Kuwait (Dinar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  KWD Kuwait (Dinar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+153|SF57847|1|2|KWD Kuwait (Dinar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, KWD Kuwait (Dinar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+154|SF57854|1|2|MYR Malasia (Ringgit), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, MYR Malasia (Ringgit), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+155|SF57855|1|2|MYR Malasia (Ringgit), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  MYR Malasia (Ringgit), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+156|SF57858|1|2|MAD Marruecos (Dirham), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, MAD Marruecos (Dirham), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+157|SF57859|1|2|MAD Marruecos (Dirham), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, MAD Marruecos (Dirham), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+158|SF57860|1|2|NIC Nicaragua (Cordoba), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, NIC Nicaragua (Cordoba), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+159|SF57861|1|2|NIC Nicaragua (Cordoba), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  NIC Nicaragua (Cordoba), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+160|SF57862|1|2|NGN Nigeria (Fed) (Naira), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, NGN Nigeria (Fed) (Naira), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+161|SF57863|1|2|NGN Nigeria (Fed) (Naira), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  NGN Nigeria (Fed) (Naira), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+162|SF57864|1|2|NOK Noruega (Corona), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, NOK Noruega (Corona), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+163|SF57865|1|2|NOK Noruega (Corona), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  NOK Noruega (Corona), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+164|SF57866|1|2|NZD Nueva Zelanda (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, NZD Nueva Zelanda (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+165|SF57867|1|2|NZD Nueva Zelanda (Dólar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, NZD Nueva Zelanda (Dólar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+166|SF57870|1|2|PAB Panamá (Balboa), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  PAB Panamá (Balboa), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+167|SF57871|1|2|PAB Panamá (Balboa), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, PAB Panamá (Balboa), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+168|SF57872|1|2|PYG Paraguay (Guarani 2/), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, PYG Paraguay (Guarani 2/), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+169|SF57873|1|2|PYG Paraguay (Guarani 2/), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, PYG Paraguay (Guarani 2/), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+170|SF57874|1|2|PEN Perú (Nuevo Sol), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  PEN Perú (Nuevo Sol), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+171|SF57875|1|2|PEN Perú (Nuevo Sol), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, PEN Perú (Nuevo Sol), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+172|SF57876|1|2|PLN Polonia (Zloty), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, PLN Polonia (Zloty), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+173|SF57877|1|2|PLN Polonia (Zloty), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  PLN Polonia (Zloty), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+174|SF57878|1|2|USD Puerto Rico (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, USD Puerto Rico (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+175|SF57879|1|2|USD Puerto Rico (Dólar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  USD Puerto Rico (Dólar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+176|SF57880|1|2|CZK Rep. Checa (Corona), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, CZK Rep. Checa (Corona), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+177|SF57881|1|2|CZK Rep. Checa (Corona), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  CZK Rep. Checa (Corona), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+178|SF57882|1|2|ZAR Rep. De Sudáfrica (Rand), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, ZAR Rep. De Sudáfrica (Rand), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+179|SF57883|1|2|ZAR Rep. De Sudáfrica (Rand), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, ZAR Rep. De Sudáfrica (Rand), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+180|SF57888|1|2|DOP Rep. Dominicana (Peso), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, DOP Rep. Dominicana (Peso), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+181|SF57889|1|2|DOP Rep. Dominicana (Peso), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, DOP Rep. Dominicana (Peso), Tipo en pesos |2000-01-01|\N|\N|1|\N|\N
+182|SF57892|1|2|ROL Rumania (Leu 2/), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  ROL Rumania (Leu 2/), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+183|SF57893|1|2|ROL Rumania (Leu 2/), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, ROL Rumania (Leu 2/), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+184|SF57896|1|2|SGD Singapur (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, SGD Singapur (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+185|SF57897|1|2|SGD Singapur (Dólar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  SGD Singapur (Dólar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+186|SF57902|1|2|SEK Suecia (Corona), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, SEK Suecia (Corona), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+187|SF57903|1|2|SEK Suecia (Corona), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  SEK Suecia (Corona), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+188|SF57904|1|2|CHF Suiza (Franco), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, CHF Suiza (Franco), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+189|SF57905|1|2|CHF Suiza (Franco), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, CHF Suiza (Franco), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+190|SF57908|1|2|THB Tailandia (Baht), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, THB Tailandia (Baht), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+191|SF57909|1|2|THB Tailandia (Baht), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, THB Tailandia (Baht), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+192|SF57910|1|2|TWD Taiwán (Nuevo Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, TWD Taiwán (Nuevo Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+193|SF57911|1|2|TWD Taiwán (Nuevo Dólar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, TWD Taiwán (Nuevo Dólar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+194|SF57914|1|2|TTD Trinidad Y Tobago (Dólar), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, TTD Trinidad Y Tobago (Dólar), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+195|SF57915|1|2|TTD Trinidad Y Tobago (Dólar), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  TTD Trinidad Y Tobago (Dólar), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+196|SF57916|1|2|TRY Turquía (Lira), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, TRY Turquía (Lira), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+197|SF57917|1|2|TRY Turquía (Lira), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, TRY Turquía (Lira), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+198|SF57918|1|2|UAH Ucrania (Hryvna), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, UAH Ucrania (Hryvna), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+199|SF57919|1|2|UAH Ucrania (Hryvna), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  UAH Ucrania (Hryvna), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+200|SF57920|1|2|UYP Uruguay (Peso), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, UYP Uruguay (Peso), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+201|SF57921|1|2|UYP Uruguay (Peso), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México, UYP Uruguay (Peso), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+202|SF57922|1|2|EUR U.Mon.Europea (Euro 3/), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  EUR U.Mon.Europea (Euro 3/), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+203|SF57923|1|2|EUR U.Mon.Europea (Euro 3/), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  EUR U.Mon.Europea (Euro 3/), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+204|SF57924|1|2|VES Venezuela (Bolívar Soberano), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México,  VES Venezuela (Bolívar Soberano), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+205|SF57925|1|2|VES Venezuela (Bolívar Soberano), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  VES Venezuela (Bolívar Soberano), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+206|SF57926|1|2|VND Vietnam (Dong 2/), Dólares por divisa|Tipos de Cambio para Revalorización de Balance del Banco de México, VND Vietnam (Dong 2/), Dólares por divisa|2000-01-01|\N|\N|1|\N|\N
+207|SF57927|1|2|VND Vietnam (Dong 2/), Tipo en pesos|Tipos de Cambio para Revalorización de Balance del Banco de México,  VND Vietnam (Dong 2/), Tipo en pesos|2000-01-01|\N|\N|1|\N|\N
+208|SF57928|1|2|Metales Preciosos, Onza Troy Plata|Tipos de Cambio para Revalorización de Balance del Banco de México,  Metales Preciosos, Onza Troy Plata|2000-01-01|\N|\N|1|\N|\N
+209|SF57929|1|2|Metales Preciosos, Peso Oro|Tipos de Cambio para Revalorización de Balance del Banco de México, Metales Preciosos, Peso Oro|2000-01-01|\N|\N|1|\N|\N
+210|SF57930|1|2|Metales Preciosos, Onza Oro|Tipos de Cambio para Revalorización de Balance del Banco de México,  Metales Preciosos, Onza Oro|2000-01-01|\N|\N|1|\N|\N
+211|SF57931|1|2|Metales Preciosos, Onza Plata Amonedada|Tipos de Cambio para Revalorización de Balance del Banco de México, Metales Preciosos, Onza Plata Amonedada|2000-01-01|\N|\N|1|\N|\N
+212|SF57932|1|2|Metales Preciosos, Onza Oro Amonedado|Tipos de Cambio para Revalorización de Balance del Banco de México, Metales Preciosos, Onza Oro Amonedado|2000-01-01|\N|\N|1|\N|\N
+213|SF60428|1|2|Dólares convertidos al tipo de cambio para solventar las obligaciones denominadas, en moneda extranjera pagaderas en el interior de la República|Tipos de Cambio para Revalorización de Balance del Banco de México,Dólares convertidos al tipo de cambio para solventar las obligaciones denominadas, en moneda extranjera pagaderas en el interior de la República |2000-01-01|\N|\N|1|\N|\N
+214|0|1|2|Inflacion|Inflacion|2005-01-01|\N|\N|2|\N|\N
+215|0|1|2|IPC|IPC|2005-01-01|\N|\N|2|\N|\N
+216|0|1|0|INPC|Índice nacional de precios al consumidor. Base segunda quincena de julio de 2018=100|2005-01-01|\N|\N|2|\N|2018
+217|0|1|0|X_TOTAL|Total Exportacion|2005-01-01|\N|\N|2|\N|2018
+218|0|1|0|X_PETROLERAS|Exportacion petrolera|2005-01-01|\N|\N|2|\N|2018
+219|0|1|0|X_NOPETROLERAS|Exportacion no petrolera|2005-01-01|\N|\N|2|\N|2018
+220|0|1|0|M_TOTAL|Total Importacion|2005-01-01|\N|\N|2|\N|2018
+221|0|1|0|M_PETROLERAS|Importacion petrolera|2005-01-01|\N|\N|2|\N|2018
+222|0|1|0|M_NOPETROLERAS|Importacion no petrolera|2005-01-01|\N|\N|2|\N|2018
+223|0|1|0|T_DESEMPLEO|Tasas de ocupación, desocupación y subocupación (resultados mensuales de la ENOE, 15 años y más)|2005-01-01|\N|\N|2|\N|2018
+224|0|1|0|TASA_PRIME||2005-01-01|\N|\N|2|\N|2018
+225|0|1|0|PIB_real||2005-01-01|\N|\N|2|\N|2018
+226|0|1|0|PIB_variacion||2005-01-01|\N|\N|2|\N|2018
+227|0|1|0|Inflacion|Inflacion|2005-01-01|\N|\N|2|\N|2018
+228|0|1|0|IPC|IPC|2005-01-01|\N|\N|2|\N|2018
