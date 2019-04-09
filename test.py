@@ -8,8 +8,11 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 from dateutil.parser import parse
 
-targets = ['Reserva_Consumo', 'Reserva_Comercial', 'Reserva_Hipotecario']
-target = targets[2]
+from sklearn import preprocessing as prp
+
+targets = ['Reserva_Consumo', 'Reserva_Comercial', 'Reserva_Hipotecario',
+           'Reserva_Comercial_Empresa', 'Reserva_Comercial_Negocio', 'Reserva_Consumo_TDC']
+target = targets[5]
 
 exog_vars = [
     'DOLAR_TC',
@@ -78,45 +81,78 @@ mapper = {
 }
 
 target_exog_vars = {
-    'Reserva_Consumo': ['DOLAR_TC', 'EURO_TC', 'LIBOR_1', 'LIBOR_3', 'S_P500',],
-    'Reserva_Comercial': ['DOLAR_TC', 'VIX', 'S_P500', 'INFLACION_ANUAL', 'T_DESEMPLEO', 'CETES_364'],
-    'Reserva_Hipotecario': ['CETES_91', 'T_DESEMPLEO', 'DOLAR_TC', 'T-BILL_12', 'IPC' ]
+    'Reserva_Consumo': ['T-BILL_12'],
+    'Reserva_Comercial': ['T_DESEMPLEO', 'VIX',],
+    'Reserva_Hipotecario': ['DOLAR_TC','CETES_91','TIIE_91',
+                            'T_DESEMPLEO','LIBOR_6',],
+    'Reserva_Comercial_Empresa': ['T_DESEMPLEO','VIX',],
+    'Reserva_Comercial_Negocio': ['DOLAR_TC','CETES_91','T_DESEMPLEO',],
+    'Reserva_Consumo_TDC': ['TIIE_91',
+                            ]
 }
 
 target_adv_exog_vars = {
-    'Reserva_Consumo': ['{}_ADV'.format(var)  for var in target_exog_vars['Reserva_Consumo']],
-    'Reserva_Comercial': ['{}_ADV'.format(var)  for var in target_exog_vars['Reserva_Comercial']],
-    'Reserva_Hipotecario': ['{}_ADV'.format(var)  for var in target_exog_vars['Reserva_Hipotecario']]
+    'Reserva_Consumo': ['{}_ADV'.format(var) for var in target_exog_vars['Reserva_Consumo']],
+    'Reserva_Comercial': ['{}_ADV'.format(var) for var in target_exog_vars['Reserva_Comercial']],
+    'Reserva_Hipotecario': ['{}_ADV'.format(var) for var in target_exog_vars['Reserva_Hipotecario']],
+    'Reserva_Comercial_Empresa': ['{}_ADV'.format(var) for var in target_exog_vars['Reserva_Comercial_Empresa']],
+    'Reserva_Comercial_Negocio': ['{}_ADV'.format(var) for var in target_exog_vars['Reserva_Comercial_Negocio']],
+    'Reserva_Consumo_TDC': ['{}_ADV'.format(var) for var in target_exog_vars['Reserva_Consumo_TDC']]
 }
 
 target_fecha_inicial = {
     'Reserva_Consumo': '2014-07',
     'Reserva_Comercial': '2014-01',
-    'Reserva_Hipotecario': '2016-01'
+    'Reserva_Hipotecario': '2016-01',
+    'Reserva_Comercial_Empresa': '2015-01',
+    'Reserva_Comercial_Negocio': '2015-01',
+    'Reserva_Consumo_TDC': '2015-01',
+}
+
+target_fecha_final = {
+    'Reserva_Consumo': '2014-07',
+    'Reserva_Comercial': '2014-01',
+    'Reserva_Hipotecario': '2016-01',
+    'Reserva_Comercial_Empresa': '2015-01',
+    'Reserva_Comercial_Negocio': '2015-01',
+    'Reserva_Consumo_TDC': '2014-01',
 }
 
 
 target_arima_params = {
     'Reserva_Consumo': {
         'order': (1, 0, 1),
-        'seasonal_order': (1, 0, 1, 12)
+        'seasonal_order': (0, 0, 0, 0)
     },
     'Reserva_Comercial': {
-        'order': (1, 0, 1),
-        'seasonal_order': (1, 0, 1, 12)
+        'order': (1, 0, 0),
+        'seasonal_order': (0, 0, 0, 0)
     },
     'Reserva_Hipotecario': {
         'order': (1, 0, 1),
-        'seasonal_order': (1, 0, 1, 12)
-    }
+        'seasonal_order': (0, 0, 0, 0)
+    },
+    'Reserva_Comercial_Empresa': {
+        'order': (1, 0, 0),
+        'seasonal_order': (0, 0, 0, 0)
+    },
+    'Reserva_Comercial_Negocio': {
+        'order': (1, 0, 1),
+        'seasonal_order': (0, 0, 0, 0)
+    },
+    'Reserva_Consumo_TDC': {
+        'order': (1, 0, 1),
+        'seasonal_order': (1, 0, 0, 12)
+    },
 }
 
 data_raw = pd.read_csv("input/Base_Trabajo.csv", dayfirst=True)
 
-data_raw['IPC'] = data_raw['IPC'].apply(lambda x: x/10000)
-data_raw['IPC_ADV'] = data_raw['IPC_ADV'].apply(lambda x: x/10000)
-data_raw['S_P500'] = data_raw['S_P500'].apply(lambda x: x/1000)
-data_raw['S_P500_ADV'] = data_raw['S_P500_ADV'].apply(lambda x: x/1000)
+
+# data_raw['IPC'] = data_raw['IPC'].apply(lambda x: x/10000)
+# data_raw['IPC_ADV'] = data_raw['IPC_ADV'].apply(lambda x: x/10000)
+# data_raw['S_P500'] = data_raw['S_P500'].apply(lambda x: x/1000)
+# data_raw['S_P500_ADV'] = data_raw['S_P500_ADV'].apply(lambda x: x/1000)
 
 data_raw['fecha'] = data_raw['fecha'].apply(lambda x: parse(x, dayfirst=True))
 
@@ -124,13 +160,18 @@ dev_sample = (data_raw['fecha'] >= target_fecha_inicial[target])&(data_raw['fech
 # select data to foreacasting
 forecast = (data_raw['fecha'] >= '2019-03')&(data_raw['fecha'] <= '2021-12')
 
+scaler = prp.StandardScaler()
+# scaler_adv = prp.StandardScaler()
+
+data_raw.loc[dev_sample, exog_vars] = scaler.fit_transform(data_raw.loc[dev_sample, exog_vars].values)
+data_raw.loc[dev_sample, exog_adv_vars] = scaler.fit_transform(data_raw.loc[dev_sample, exog_adv_vars].values)
+
+data_raw.loc[forecast, exog_vars] = scaler.transform(data_raw.loc[forecast, exog_vars].values)
+data_raw.loc[forecast, exog_adv_vars] = scaler.transform(data_raw.loc[forecast, exog_adv_vars].values)
 
 end = dev_sample.sum() + forecast.sum() - 1
 
 init = dev_sample.sum()
-
-
-
 
 data_X = data_raw.loc[dev_sample, target_exog_vars[target]]
 
