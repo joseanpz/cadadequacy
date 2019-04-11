@@ -1,18 +1,17 @@
-import numpy as np
+from pmdarima.arima import auto_arima
 import math
-import pyflux as pf
+import numpy as np
 import pandas as pd
-from statsmodels.tsa.statespace import sarimax as smx
-from pandas_datareader import DataReader
-from datetime import datetime
+import pmdarima as pm
+from sklearn import preprocessing as prp
 import matplotlib.pyplot as plt
+
 from dateutil.parser import parse
 
-from sklearn import preprocessing as prp
 
 targets = ['Reserva_Consumo', 'Reserva_Comercial', 'Reserva_Hipotecario',
            'Reserva_Comercial_Empresa', 'Reserva_Comercial_Negocio', 'Reserva_Consumo_TDC']
-target = targets[1]
+target = targets[4]
 
 # 'DOLAR_TC','CETES_91','IPC','TIIE_91','T_DESEMPLEO','LIBOR_6','T-BILL_12','VIX','S_P500','INFLACION_ANUAL',
 
@@ -88,8 +87,7 @@ mapper = {
 
 target_exog_vars = {
     'Reserva_Consumo': ['T-BILL_12'],
-    'Reserva_Comercial': [
-                          'VIX'],  # ['T_DESEMPLEO', 'VIX',],
+    'Reserva_Comercial': init_exog_vars,  # ['T_DESEMPLEO', 'VIX',],
     'Reserva_Hipotecario': ['DOLAR_TC','CETES_91','TIIE_91',
                             'T_DESEMPLEO','LIBOR_6',],
     'Reserva_Comercial_Empresa': ['T_DESEMPLEO','VIX',],
@@ -109,19 +107,19 @@ target_adv_exog_vars = {
 target_fecha_inicial = {
     'Reserva_Consumo': '2014-07',
     'Reserva_Comercial': '2014-01',
-    'Reserva_Hipotecario': '2016-01',
-    'Reserva_Comercial_Empresa': '2015-01',
-    'Reserva_Comercial_Negocio': '2015-01',
+    'Reserva_Hipotecario': '2015-07',  # '2016-01'
+    'Reserva_Comercial_Empresa': '2014-01',  # 2015-01
+    'Reserva_Comercial_Negocio': '2014-01',  # 2015-01
     'Reserva_Consumo_TDC': '2015-01',
 }
 
 target_fecha_final = {
-    'Reserva_Consumo': '2014-07',
-    'Reserva_Comercial': '2014-01',
-    'Reserva_Hipotecario': '2016-01',
-    'Reserva_Comercial_Empresa': '2015-01',
-    'Reserva_Comercial_Negocio': '2015-01',
-    'Reserva_Consumo_TDC': '2014-01',
+    'Reserva_Consumo': '2018-02',
+    'Reserva_Comercial': '2018-02',
+    'Reserva_Hipotecario': '2018-02',
+    'Reserva_Comercial_Empresa': '2018-02',
+    'Reserva_Comercial_Negocio': '2018-02',
+    'Reserva_Consumo_TDC': '2019-02',
 }
 
 
@@ -131,8 +129,8 @@ target_arima_params = {
         'seasonal_order': (0, 0, 0, 0)
     },
     'Reserva_Comercial': {
-        'order': (3, 2, 1),
-        'seasonal_order': (2, 1, 0, 12)
+        'order': (2, 1, 1),
+        'seasonal_order': (1, 0, 0, 12)
     },
     'Reserva_Hipotecario': {
         'order': (1, 0, 1),
@@ -162,9 +160,9 @@ data_raw = pd.read_csv("input/Base_Trabajo.csv", dayfirst=True)
 
 data_raw['fecha'] = data_raw['fecha'].apply(lambda x: parse(x, dayfirst=True))
 
-dev_sample = (data_raw['fecha'] >= target_fecha_inicial[target])&(data_raw['fecha'] <= '2019-02')
+dev_sample = (data_raw['fecha'] >= target_fecha_inicial[target])&(data_raw['fecha'] <= target_fecha_final[target])
 # select data to foreacasting
-forecast = (data_raw['fecha'] >= '2019-03')&(data_raw['fecha'] <= '2021-12')
+forecast = (data_raw['fecha'] > target_fecha_final[target])&(data_raw['fecha'] <= '2021-12')
 
 scaler = prp.StandardScaler()
 # scaler_adv = prp.StandardScaler()
@@ -175,55 +173,48 @@ data_raw.loc[dev_sample, exog_adv_vars] = scaler.fit_transform(data_raw.loc[dev_
 data_raw.loc[forecast, exog_vars] = scaler.transform(data_raw.loc[forecast, exog_vars].values)
 data_raw.loc[forecast, exog_adv_vars] = scaler.transform(data_raw.loc[forecast, exog_adv_vars].values)
 
-end = dev_sample.sum() + forecast.sum() - 1
-
-init = dev_sample.sum()
 
 data_X = data_raw.loc[dev_sample, target_exog_vars[target]]
 
 data_y = data_raw.loc[dev_sample, [target]]
-data_y[target] = data_y[target].apply(lambda x: math.log(x, math.e))
-
-# data = pd.concat([data_y, data_X], axis=1)
-model = smx.SARIMAX(data_y, exog=data_X, order=target_arima_params[target]['order'],
-                    seasonal_order=target_arima_params[target]['seasonal_order'],
-                    enforce_stationarity=False, enforce_invertibility=False)
-
-model_fit = model.fit()
-
-summary = model_fit.summary()
-print(summary)
+data_y_log = data_y[target].apply(lambda x: math.log(x, math.e))
 
 
-data_forecast_X = data_raw.loc[forecast, target_exog_vars[target]]
-data_adverse_forecast_X = data_raw.loc[forecast, target_adv_exog_vars[target]].rename(columns=mapper)
 
+# SARIMAX Model
+sxmodel = pm.auto_arima(data_y_log,
+                        start_p=1, start_q=1, test='adf',
+                        max_p=3, max_q=3, m=12, start_P=0,
+                        seasonal=True, d=None, D=1,
+                        trace=True, error_action='ignore',
+                        suppress_warnings=True, stepwise=True)
+print(sxmodel.summary())
 
-preds = model_fit.get_prediction(start=0, end=end, exog=data_forecast_X)
-adverse_preds = model_fit.get_prediction(start=0, end=end, exog=data_adverse_forecast_X)
+# Forecast
+n_periods = 34
+fc, confint = sxmodel.predict(n_periods=n_periods, return_conf_int=True)
+index_of_fc = np.arange(data_y[target].index[-1]+1, data_y[target].index[-1]+1+n_periods)
 
+# make series for plotting purpose
+fc_series = pd.Series(fc, index=index_of_fc)
+fc_series = fc_series.apply(lambda x: math.exp(x))
+lower_series = pd.Series(confint[:, 0], index=index_of_fc).apply(lambda x: math.exp(x))
+upper_series = pd.Series(confint[:, 1], index=index_of_fc).apply(lambda x: math.exp(x))
 
-var_vect = preds.se_mean[init:]
-adverse_var_vect = adverse_preds.se_mean[init:]
+# Plot
+plt.plot(data_y[target])
+plt.plot(fc_series, color='darkgreen')
+# plt.fill_between(lower_series.index,
+#                  lower_series,
+#                  upper_series,
+#                  color='k', alpha=.15)
 
-base_var = np.var(var_vect)
-adverse_var = np.var(adverse_var_vect)
-var1 = math.exp(base_var/2)
-var2 = math.exp(adverse_var/2)
-
-dev_data = preds.predicted_mean[13:init].apply(math.exp)
-
-data_y[target] = data_y[target].apply(math.exp)
-pred = preds.predicted_mean[init:].apply(lambda x: math.exp(x)*var1)
-adverse_pred = adverse_preds.predicted_mean[init:].apply(lambda x: math.exp(x)*var2)
-
-data_y0 = data_y.reset_index()
-plt.figure(figsize=(15, 5))
-plt.plot(dev_data, 'r')
-plt.plot(pred, 'g')
-plt.plot(adverse_pred, 'c')
-plt.plot(data_y0[target], 'b')
-plt.title('Predicción {}'.format(target))
+plt.title("Predicción de {}".format(target))
 plt.show()
+
+
+output = pd.concat([data_raw['fecha'], data_y,fc_series,lower_series,upper_series], axis=1)
+output.to_csv('output/{}_output_fc_after_{}.csv'.format(target,target_fecha_final[target]))
+
 
 print('finish!')
